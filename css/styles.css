@@ -29,6 +29,7 @@
     font-family: var(--main-font);
     color: var(--dark-txt-clr);
     margin: 0;
+
 }
 
 h1,
@@ -51,7 +52,11 @@ img {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+
+}
+
+.section {
+    padding: 94px 0;
 }
 
 .header-container,
@@ -103,6 +108,7 @@ img {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     font-family: var(--main-font);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-list,
@@ -257,12 +263,10 @@ img {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
-    padding-bottom: 94px;
+
 }
 
-.ideology-item {
-    padding-top: 94px;
-}
+.ideology-item {}
 
 
 
@@ -284,17 +288,17 @@ img {
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .images-list {
     list-style: none;
     display: flex;
     gap: 30px;
+    padding: 0;
 }
 
-.image {
-    padding-bottom: 94px;
-}
+
 
 /* Кінець чим займаємося */
 
@@ -303,10 +307,38 @@ img {
 
 .team {
     background-color: var(--light-grey-clr);
+
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+
+    padding-bottom: 50px;
 }
 
 .team-list {
     list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
 }
 
 .team-name {
@@ -315,6 +347,8 @@ img {
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
@@ -323,7 +357,10 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
+    margin-bottom: 30px;
 }
+
+
 
 /* кінець люди в команді */
 
@@ -332,6 +369,13 @@ img {
 
 .footer {
     background-color: var(--dark-grey-clr);
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    padding: 30px 0;
+    gap: 9px;
 }
 
 .footer-logo {
@@ -355,6 +399,9 @@ img {
     color: var(--light-txt-clr);
     text-decoration: none;
     font-style: normal;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 
 .address-tel,
@@ -366,11 +413,17 @@ img {
     color: var(--foot-grey-clr);
     text-decoration: none;
     font-style: normal;
+    display: block;
+    margin-bottom: 9px;
+}
 
+.address-tel {
+    margin: 0;
 }
 
 .address-list {
     list-style: none;
+    padding: 0;
 }
 
 .address-tel:hover,
@@ -398,6 +451,10 @@ img {
 
 .port-btns {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 }
 
 .port-btn {
@@ -422,9 +479,17 @@ img {
 
 }
 
+.port-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+}
 
 .port-item {
     list-style: none;
+    width: 370px;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .port-link,
@@ -438,6 +503,7 @@ img {
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
+    margin-top: 20px;
 }
 
 .port-text {
@@ -445,4 +511,6 @@ img {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
+    margin-top: 4px;
+    margin-bottom: 20px;
 }
