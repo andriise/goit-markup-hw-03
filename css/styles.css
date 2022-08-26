@@ -226,9 +226,13 @@ img {
 /* Перелік гарних рис */
 
 
+.ideology {
+    padding-bottom: 0;
+}
 
 .ideology-title {
     display: none;
+    
 }
 
 .caution {
@@ -237,6 +241,7 @@ img {
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 
 .ideo-container {
@@ -249,6 +254,7 @@ img {
 .ideology-text {
     width: 270px;
     flex-wrap: wrap;
+    
 }
 
 .ideology-list {
@@ -256,6 +262,7 @@ img {
     list-style: none;
     display: flex;
     gap: 30px;
+    
 }
 
 .ideology-text {
@@ -263,10 +270,10 @@ img {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
+    
 
 }
 
-.ideology-item {}
 
 
 
