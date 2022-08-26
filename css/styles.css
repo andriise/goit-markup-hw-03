@@ -1,0 +1,372 @@
+:root {
+    /* Кольори макету */
+
+    --main-clr: #2196F3;
+    --dark-grey-clr: #2F313A;
+    --light-clr: #F5F5F5;
+    --light-grey-clr: #F5F4FA;
+    --grey-txt-clr: #757575;
+    --dark-txt-clr: #212121;
+    --light-txt-clr: #FFFFFF;
+    --foot-grey-clr: rgba(255, 255, 255, 0.6);
+    --dark-clr: #000000;
+    --btn-active: #188CE8;
+
+
+    /* Шрифти макету */
+
+    --main-font: 'Roboto',
+        sans-serif;
+    --logo-font: 'Raleway',
+        sans-serif;
+
+
+}
+
+
+
+.main {
+    font-family: var(--main-font);
+    color: var(--dark-txt-clr);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+
+
+/* Початок nav */
+
+.logo,
+.logo:focus {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--dark-clr);
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.web {
+    color: var(--main-clr);
+
+}
+
+/* Початок шапки */
+
+.header {
+    background-color: var(--light-txt-clr);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+}
+
+.header-list,
+.header-list:focus {
+    list-style: none;
+}
+
+
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-studio {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-studio:hover,
+.nav-studio:focus {
+    color: var(--main-clr);
+}
+
+.current {
+    color: var(--main-clr);
+}
+
+/* Кінець nav */
+
+/* Початок контактів */
+
+.header-item {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--grey-txt-clr);
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.header-item:hover,
+.header-item:focus {
+    color: var(--main-clr);
+}
+
+/* Кінець контактів */
+
+
+
+/* Початок основного контенту */
+
+
+/* Герой */
+.hero {
+    background-color: var(--dark-grey-clr);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-txt-clr);
+}
+
+.hero-btn {
+    background-color: var(--main-clr);
+    color: var(--light-txt-clr);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    padding: 10px 32px;
+}
+
+.hero-btn:hover {
+    background-color: var(--btn-active);
+}
+
+/* Герой кінець */
+
+/* Перелік гарних рис */
+
+.ideology-title {
+    display: none;
+}
+
+.caution {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.ideology-list {
+    list-style: none;
+}
+
+.ideology-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-clr);
+}
+
+/* Кінець гарних рис */
+
+
+/* Чим займаємося */
+
+.title-images {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.images-list {
+    list-style: none;
+}
+
+/* Кінець чим займаємося */
+
+
+/* Люди в команді */
+
+.team {
+    background-color: var(--light-grey-clr);
+}
+
+.team-list {
+    list-style: none;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-clr);
+}
+
+/* кінець люди в команді */
+
+
+/* Футер початок */
+
+.footer {
+    background-color: var(--dark-grey-clr);
+}
+
+.footer-logo {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-clr);
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.address-map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-clr);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.address-tel,
+.address-mail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--foot-grey-clr);
+    text-decoration: none;
+    font-style: normal;
+
+}
+
+.address-list {
+    list-style: none;
+}
+
+.address-tel:hover,
+.address-mail:hover,
+.address-map:hover,
+.address-tel:focus,
+.address-mail:focus,
+.address-map:focus {
+    color: var(--main-clr);
+
+}
+
+/* Кінець футеру */
+
+
+
+
+
+/* ПОРТФОЛІО */
+
+
+.port-title {
+    display: none;
+}
+
+.port-btns {
+    list-style: none;
+}
+
+.port-btn {
+    cursor: pointer;
+    background-color: var(--light-grey-clr);
+    border: 0;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    padding: 6px 22px;
+    border-radius: 4px;
+}
+
+.port-btn:hover,
+.port-btn:focus {
+    background-color: var(--main-clr);
+    color: var(--light-txt-clr);
+
+}
+
+
+.port-item {
+    list-style: none;
+}
+
+.port-link,
+.port-link:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.port-titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+}
+
+.port-text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-clr);
+}
