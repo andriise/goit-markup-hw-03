@@ -37,7 +37,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
     margin: 0;
 }
 
@@ -51,6 +52,22 @@ img {
     padding: 0 15px;
     margin: 0 auto;
     outline: 2px solid red;
+}
+
+.header-container,
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+}
+
+
+
+.header-list,
+.nav-list {
+    display: flex;
+    gap: 50px;
 }
 
 
@@ -67,6 +84,7 @@ img {
     color: var(--dark-clr);
     text-decoration: none;
     list-style: none;
+    margin-right: 92px;
 }
 
 
@@ -96,16 +114,21 @@ img {
 
 .nav-list {
     list-style: none;
+
 }
 
-.nav-studio {
+
+
+.nav-link {
 
     text-decoration: none;
     color: inherit;
+    padding: 32px 0;
+
 }
 
-.nav-studio:hover,
-.nav-studio:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--main-clr);
 }
 
@@ -117,7 +140,7 @@ img {
 
 /* Початок контактів */
 
-.header-item {
+.header-link {
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -125,11 +148,17 @@ img {
     letter-spacing: 0.02em;
     color: var(--grey-txt-clr);
     text-decoration: none;
-    margin-bottom: 0;
+
 }
 
-.header-item:hover,
-.header-item:focus {
+.header-link,
+.nav-studio,
+.header-item {
+    padding: 32px 0;
+}
+
+.header-link:hover,
+.header-link:focus {
     color: var(--main-clr);
 }
 
@@ -145,6 +174,14 @@ img {
     background-color: var(--dark-grey-clr);
 }
 
+.hero-container {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -153,6 +190,9 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-clr);
+    flex-wrap: wrap;
+    width: 696px;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -162,14 +202,13 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
     padding: 10px 32px;
+    width: 216px;
 }
 
 .hero-btn:hover {
@@ -179,6 +218,8 @@ img {
 /* Герой кінець */
 
 /* Перелік гарних рис */
+
+
 
 .ideology-title {
     display: none;
@@ -192,8 +233,23 @@ img {
     text-transform: uppercase;
 }
 
+.ideo-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.caution,
+.ideology-text {
+    width: 270px;
+    flex-wrap: wrap;
+}
+
 .ideology-list {
+
     list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 .ideology-text {
@@ -201,12 +257,26 @@ img {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
+    padding-bottom: 94px;
 }
+
+.ideology-item {
+    padding-top: 94px;
+}
+
+
 
 /* Кінець гарних рис */
 
 
 /* Чим займаємося */
+
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .title-images {
     font-weight: 700;
@@ -218,6 +288,12 @@ img {
 
 .images-list {
     list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.image {
+    padding-bottom: 94px;
 }
 
 /* Кінець чим займаємося */
