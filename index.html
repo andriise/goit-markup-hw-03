@@ -51,7 +51,7 @@
     <!-- Основний контент -->
     <main>
       <!--Вступне відео-->
-      <section class="hero section">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-btn">Замовити послугу</button>
@@ -60,7 +60,7 @@
       <!--Перелік гарних рис-->
       <section class="ideology section">
         <div class="container ideo-container">
-          <h2 class="ideology-title">Яка наша ідеологія</h2>
+          <h2 class="visually-hidden">Яка наша ідеологія</h2>
           <ul class="ideology-list">
             <li class="ideology-item">
               <h3 class="caution">Увага до деталей</h3>
@@ -137,8 +137,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="team-block">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -148,8 +150,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="team-block">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -159,13 +163,17 @@
                 height="260"
                 class="teamteam-img"
               />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="team-text">Marketing</p>
+              <div class="team-block">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/man3.jpg" alt="" width="270" height="260" />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="team-block">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -173,7 +181,7 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <a href="" class="footer-logo"><span class="web">Web</span>Studio</a>
         <address class="address">
           <ul class="address-list">
