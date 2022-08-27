@@ -192,12 +192,7 @@ img {
     text-align: center;
 }
 
-.hero-container {
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .hero-title {
     font-weight: 900;
@@ -209,6 +204,8 @@ img {
     flex-wrap: wrap;
     width: 696px;
     margin-bottom: 30px;
+    margin: 0 30px;
+
 
 }
 
